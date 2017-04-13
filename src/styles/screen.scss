@@ -7,7 +7,47 @@ html {
   @include full-height;
 }
 
+header {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .headshot {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    border: 2px black solid;
+    border-radius: 50px;
+  }
+
+  .bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+
+  :hover {
+    transition: rotate 3s ease;
+    transform: rotate(35deg);
+  }
+}
+
 body {
-  margin: 0;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-image: url('../images/gradient-background.jpg');
+  background-position: center;
   font: $base-text-size / 1 $base-font-family;
 }
