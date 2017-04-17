@@ -48,6 +48,7 @@ componentDidMount() {
     <div className='bio'><p>{this.state.bio}</p></div>
     </header>
     <div className='workinfo'>
+    <p>Some Works</p>
     <Repos starred={this.state.starred} />
     </div>
     <footer>
@@ -56,6 +57,7 @@ componentDidMount() {
     <a href='https://twitter.com/Bassface69'><img src={twImage} height='75' width='75' /></a>
     <a href='https://www.linkedin.com/feed/'><img src={lnkImage} height='75' width='75' /></a>
     </footer>
+    <p> &copy; 2017 Garret Morales </p>
     </div>
   }
 }

@@ -18,11 +18,13 @@ header {
     color: white;
   }
 
-  .bio {
+  .bio,
+  p {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    font-size: 22px;
   }
 
   h1 {
@@ -39,10 +41,10 @@ header {
   justify-content: center;
   height: 300px;
   width: 300px;
-  border: 5px rgb(171, 171, 171) solid;
-  // animation: spin 2s infinite linear;
+  // border: 5px rgb(171, 171, 171) solid;
+  // animation: spin 10s infinite linear;
   border-radius: 300px;
-  animation: bounce-in-top 1.3s ease-in-out;
+  animation: bounce-in-top 1.5s ease-in-out;
 
   @-webkit-keyframes bounce-in-top {
     0% {
@@ -176,13 +178,36 @@ header {
 }
 
 .workinfo {
+  p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    text-decoration: underline;
+  }
+
   .linkpics,
-  .img {
+  a {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+  }
+
+  img {
+    transition-duration: 0.4s;
+    border-radius: 15px;
+    opacity: 0.6;
+  }
+
+  img:hover {
+    opacity: 1;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    height: 160px;
+    width: 220px;
+    box-shadow: 7px 7px 10px rgb(65, 65, 65);
   }
 }
 
@@ -191,14 +216,23 @@ footer {
   justify-content: center;
 
   img {
+    transition-duration: 0.3s;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
   }
 
   :hover {
     transform: rotate(30deg);
-    transition: 0.4s ease-in-out;
+    transition: 0.4s ease;
   }
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
 }
 
 body {
