@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 class Repos extends Component {
-
   render () {
     const link = this.props.starred.map((repo, i) => {
       return <a className={`pic${i + 1}`} href={repo.html_url} key={i}>
@@ -16,5 +15,4 @@ class Repos extends Component {
     )
   }
 }
-
 export default Repos

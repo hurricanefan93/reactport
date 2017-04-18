@@ -1,5 +1,4 @@
 @import 'utility';
-
 $base-text-size: 1.5em;
 $base-font-family: 'Comfortaa';
 
@@ -16,6 +15,7 @@ header {
   .location {
     font-size: 20px;
     color: white;
+    text-shadow: 2px 2px 0 transparentize(black, 0.5);
   }
 
   .bio,
@@ -25,6 +25,7 @@ header {
     align-items: center;
     color: white;
     font-size: 22px;
+    text-shadow: 2px 2px 0 transparentize(black, 0.6);
   }
 
   h1 {
@@ -33,6 +34,7 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     color: white;
+    text-shadow: 2px 2px 0 transparentize(black, 0.6);
   }
 }
 
@@ -163,17 +165,90 @@ header {
       animation-timing-function: ease-out;
     }
   }
+
+  .heartbeat,
+  img.hover {
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    -moz-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+
+  @-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+      transform: scale (1);
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+
+    10% {
+      -webkit-transform: scale(0.91);
+      transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+
+    17% {
+      -webkit-transform: scale(0.98);
+      transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+
+    33% {
+      -webkit-transform: scale(0.87);
+      transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+
+    45% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+  }
 }
 
-.headshot:hover {
-  @keyframes spin {
-    0% {
-      -webkit-transform: rotate(0deg);
-    }
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
 
-    100% {
-      -webkit-transform: rotate(360deg);
-    }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
 }
 
@@ -184,6 +259,7 @@ header {
     color: white;
     font-size: 30px;
     text-decoration: underline;
+    text-shadow: 2px 2px 0 transparentize(black, 0.6);
   }
 
   .linkpics,
